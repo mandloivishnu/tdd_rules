@@ -28,4 +28,10 @@ public class TDDProject {
 	}
 
 
+	@Test
+	public void testAdd_NewLineBetweenNumbers() {
+	    assertEquals(6, StringCalculator.add("1\n2,3"));
+	}
+
+	
 }
