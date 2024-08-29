@@ -10,4 +10,10 @@ public class TDDProject {
 	public void testAdd_EmptyString() {
 	    assertEquals(0, StringCalculator.add(""));
 	}
+	
+	@Test
+	public void testAdd_SingleNumber() {
+	    assertEquals(1, StringCalculator.add("1"));
+	}
+
 }
