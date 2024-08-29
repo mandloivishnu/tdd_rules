@@ -21,5 +21,11 @@ public class TDDProject {
 	    assertEquals(6, StringCalculator.add("1,5"));
 	}
 
+	
+	@Test
+	public void testAdd_MultipleNumbers() {
+	    assertEquals(15, StringCalculator.add("1,2,3,4,5"));
+	}
+
 
 }
