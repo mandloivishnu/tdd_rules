@@ -38,4 +38,14 @@ public class TDDProject {
 	    assertEquals(3, StringCalculator.add("//;\n1;2"));
 	}
 
+	
+	@Test
+	public void testMultipleNegativeNumbers() {
+	    try {
+	    	StringCalculator.add("1,-2,-3,4");
+	    } catch (IllegalArgumentException e) {
+	        assertEquals("Negative numbers not allowed: [-2, -3]", e.getMessage());
+	    }
+	}
+
 }

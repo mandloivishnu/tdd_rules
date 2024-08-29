@@ -18,7 +18,6 @@ public class StringCalculator {
             numbers = numbers.substring(delimiterIndex + 1);
         }
         
-        // Split the numbers using the delimiter
         String[] nums = numbers.split(delimiter);
         int sum = 0;
         List<Integer> negatives = new ArrayList<>();
@@ -34,6 +33,11 @@ public class StringCalculator {
                 sum += number;
             }
         }
+        
+        if (!negatives.isEmpty()) {
+            throw new IllegalArgumentException("Negative numbers not allowed: " + negatives);
+        }
+        
         return sum;
 	}
 
