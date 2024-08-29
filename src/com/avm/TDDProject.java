@@ -15,5 +15,11 @@ public class TDDProject {
 	public void testAdd_SingleNumber() {
 	    assertEquals(1, StringCalculator.add("1"));
 	}
+	
+	@Test
+	public void testAdd_TwoNumbers() {
+	    assertEquals(6, StringCalculator.add("1,5"));
+	}
+
 
 }
