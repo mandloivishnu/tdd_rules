@@ -1,449 +1,56 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="AVM Education - Advance Vision Mindset के बारे में">
-
-    <title>AVM Exam Partner - हमारे बारे में</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: "Noto Sans Devanagari", "Noto Sans", Arial, sans-serif;
-            background: #F5FAF8;
-            color: #24332E;
-            line-height: 1.8;
-        }
-
-        /* HERO */
-        .hero {
-            background: linear-gradient(135deg, #0E8F63, #22C68F);
-            color: #FFFFFF;
-            padding: 60px 20px 70px;
-            text-align: center;
-        }
-
-        .logo {
-            width: 82px;
-            height: 82px;
-            margin: 0 auto 20px;
-            border-radius: 22px;
-
-            background: rgba(255, 255, 255, 0.16);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: 1px;
-        }
-
-        .hero h1 {
-            font-size: clamp(30px, 6vw, 46px);
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            max-width: 720px;
-            margin: auto;
-            font-size: 17px;
-            opacity: 0.95;
-        }
-
-        /* MAIN CONTAINER */
-        .container {
-            width: min(1050px, calc(100% - 32px));
-            margin: -35px auto 50px;
-            position: relative;
-        }
-
-        /* CARD */
-        .card {
-            background: #FFFFFF;
-            border-radius: 18px;
-            padding: 30px;
-            margin-bottom: 22px;
-
-            box-shadow: 0 8px 30px rgba(14, 143, 99, 0.08);
-            border: 1px solid #E1EEE9;
-        }
-
-        .card h2 {
-            color: #0E8F63;
-            font-size: 25px;
-            margin-bottom: 15px;
-        }
-
-        .card h3 {
-            color: #24332E;
-            font-size: 19px;
-            margin: 24px 0 8px;
-        }
-
-        .card p {
-            margin-bottom: 14px;
-        }
-
-        /* FEATURE CARDS */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px;
-            margin-top: 20px;
-        }
-
-        .feature {
-            padding: 24px;
-            border-radius: 15px;
-
-            background: #F4FAF7;
-            border: 1px solid #DCEEE7;
-        }
-
-        .feature .icon {
-            font-size: 30px;
-            margin-bottom: 8px;
-        }
-
-        .feature h3 {
-            margin: 0 0 8px;
-            color: #0E8F63;
-        }
-
-        /* LIST */
-        ul {
-            list-style: none;
-            margin-top: 10px;
-        }
-
-        li {
-            position: relative;
-            padding-left: 28px;
-            margin: 12px 0;
-        }
-
-        li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            top: 1px;
-
-            color: #0E8F63;
-            font-weight: 800;
-        }
-
-        /* HIGHLIGHT */
-        .highlight {
-            background: linear-gradient(
-                135deg,
-                #FFF8E8,
-                #FFFDF7
-            );
-
-            border-left: 5px solid #F5A623;
-        }
-
-        /* QUOTE */
-        .quote {
-            text-align: center;
-            padding: 35px 25px;
-
-            background: linear-gradient(
-                135deg,
-                #0E8F63,
-                #22C68F
-            );
-
-            color: #FFFFFF;
-            border-radius: 18px;
-            margin-top: 25px;
-        }
-
-        .quote p {
-            font-size: 21px;
-            font-weight: 700;
-            margin: 0;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 25px 15px 40px;
-
-            color: #60746D;
-            font-size: 14px;
-        }
-
-        /* MOBILE */
-        @media (max-width: 700px) {
-
-            .hero {
-                padding: 45px 18px 60px;
-            }
-
-            .container {
-                width: calc(100% - 20px);
-                margin-top: -28px;
-            }
-
-            .card {
-                padding: 22px 18px;
-                border-radius: 15px;
-            }
-
-            .features {
-                grid-template-columns: 1fr;
-            }
-
-            .hero p {
-                font-size: 15px;
-            }
-
-            .card h2 {
-                font-size: 22px;
-            }
-
-            .quote p {
-                font-size: 18px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AVM Education - Advance Vision Mindset के बारे में">
+<title>AVM ExamPartner - हमारे बारे में</title>
+<style>
+:root{--black:#050505;--navy:#001129;--red:#ff0006;--red-dark:#c90005;--gold:#fbe718;--orange:#f3a00a;--cream:#fffdf5;--text:#202020;--muted:#626262;--border:#eee5c8}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:"Noto Sans Devanagari","Noto Sans",Arial,sans-serif;background:#fafafa;color:var(--text);line-height:1.8}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 15% 20%,rgba(251,231,24,.14),transparent 28%),radial-gradient(circle at 85% 75%,rgba(255,0,6,.16),transparent 30%),linear-gradient(135deg,var(--black),var(--navy));color:#fff;padding:52px 20px 82px;text-align:center;border-bottom:5px solid var(--gold)}
+.hero:before{content:"";position:absolute;width:280px;height:280px;border:2px solid rgba(251,231,24,.16);border-radius:50%;top:-150px;left:-100px}.hero:after{content:"";position:absolute;width:320px;height:320px;border:2px solid rgba(255,0,6,.14);border-radius:50%;right:-140px;bottom:-180px}
+.logo-wrap{position:relative;z-index:1;width:145px;height:145px;margin:0 auto 22px;padding:8px;border-radius:50%;background:#fff;border:4px solid var(--gold);box-shadow:0 0 0 5px rgba(251,231,24,.12),0 12px 35px rgba(0,0,0,.35)}
+.logo{width:100%;height:100%;object-fit:contain;border-radius:50%}.hero h1{position:relative;z-index:1;font-size:clamp(28px,6vw,45px);line-height:1.3;margin-bottom:10px;font-weight:800}.hero h1 span{color:var(--gold)}
+.hero p{position:relative;z-index:1;max-width:720px;margin:auto;color:#f5f5f5;font-size:17px}.tagline{display:inline-block;margin-top:18px;padding:7px 18px;border:1px solid rgba(251,231,24,.7);border-radius:50px;color:var(--gold);font-size:14px;font-weight:700}
+.container{width:min(1050px,calc(100% - 32px));margin:-42px auto 55px;position:relative;z-index:2}
+.card{position:relative;background:#fff;border-radius:20px;padding:32px;margin-bottom:24px;border:1px solid var(--border);box-shadow:0 10px 35px rgba(0,0,0,.07)}.card:before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;border-radius:20px 20px 0 0;background:linear-gradient(90deg,var(--red),var(--gold),var(--orange))}
+.card h2{color:var(--red-dark);font-size:25px;line-height:1.4;margin-bottom:16px}.card p{margin-bottom:14px}strong{color:var(--navy)}
+.features{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:22px}.feature{position:relative;padding:25px;border-radius:17px;background:linear-gradient(145deg,#fff,var(--cream));border:1px solid #eadfbd;overflow:hidden}.feature:after{content:"";position:absolute;right:-35px;bottom:-50px;width:120px;height:120px;border-radius:50%;background:rgba(251,231,24,.14)}
+.icon{width:52px;height:52px;display:flex;align-items:center;justify-content:center;margin-bottom:13px;border-radius:14px;background:var(--navy);color:var(--gold);font-size:25px;box-shadow:0 5px 14px rgba(0,17,41,.18)}.feature h3{color:var(--red-dark);font-size:19px;margin-bottom:9px}
+ul{list-style:none;margin-top:12px}li{position:relative;padding-left:32px;margin:13px 0}li:before{content:"✓";position:absolute;left:0;top:1px;width:22px;height:22px;line-height:22px;text-align:center;border-radius:50%;background:var(--red);color:#fff;font-size:13px;font-weight:800}
+.highlight{background:radial-gradient(circle at 90% 10%,rgba(251,231,24,.18),transparent 30%),linear-gradient(135deg,#fff9e5,#fff);border-left:5px solid var(--red)}.highlight h2{color:var(--navy)}
+.quote{position:relative;overflow:hidden;text-align:center;padding:38px 25px;background:radial-gradient(circle at 15% 20%,rgba(251,231,24,.18),transparent 28%),linear-gradient(135deg,var(--black),var(--navy));color:#fff;border-radius:20px;border:2px solid var(--gold);box-shadow:0 10px 30px rgba(0,0,0,.15)}.quote p{color:var(--gold);font-size:21px;font-weight:800;margin:0}.quote small{display:block;margin-top:8px;color:#eee;font-size:13px}
+footer{text-align:center;padding:25px 15px 40px;color:var(--muted);font-size:14px}footer strong{color:var(--red-dark)}
+@media(max-width:700px){.hero{padding:40px 16px 68px}.logo-wrap{width:125px;height:125px}.hero p{font-size:15px}.container{width:calc(100% - 20px);margin-top:-32px}.card{padding:25px 19px;border-radius:16px}.card h2{font-size:22px}.features{grid-template-columns:1fr}.quote{padding:30px 18px}.quote p{font-size:18px}}
+</style>
 </head>
-
 <body>
-
-<!-- =========================
-     HEADER
-========================= -->
-
 <header class="hero">
 
-    <div class="logo">
-        AVM
-    </div>
-
-    <h1>
-        AVM एजुकेशन के बारे में
-    </h1>
-
-    <p>
-        Advance Vision Mindset — सीखें, समझें, अभ्यास करें और आगे बढ़ें।
-    </p>
-
+<h1><span>AVM</span> एजुकेशन के बारे में</h1>
+<p>Advance Vision Mindset — सीखें, समझें, अभ्यास करें और आगे बढ़ें।</p>
+<div class="tagline">Learn • Understand • Practice • Grow</div>
 </header>
-
-
-<!-- =========================
-     CONTENT
-========================= -->
-
 <main class="container">
-
-
-    <!-- ABOUT -->
-    <section class="card">
-
-        <h2>
-            हमारे बारे में
-        </h2>
-
-        <p>
-            <strong>AVM (Advance Vision Mindset) Education</strong>,
-            जिसे <strong>AVM Exam Partner</strong> के रूप में प्रस्तुत
-            किया गया है, छात्रों को स्मार्ट तरीके से सीखने, अभ्यास करने
-            और अपनी परीक्षा की तैयारी को बेहतर बनाने के उद्देश्य से
-            बनाया गया है।
-        </p>
-
-        <p>
-            हमारा उद्देश्य छात्रों को गुणवत्तापूर्ण और व्यवस्थित
-            शैक्षणिक सामग्री, पिछले वर्षों के प्रश्न पत्र,
-            कॉन्सेप्ट-बेस्ड प्रश्न और इंटरएक्टिव लर्निंग टूल्स
-            उपलब्ध कराना है, ताकि वे विषयों को बेहतर तरीके से समझ
-            सकें और परीक्षा की तैयारी अधिक प्रभावी ढंग से कर सकें।
-        </p>
-
-        <p>
-            AVM में हमारा मानना है कि शिक्षा केवल किताबों और
-            परीक्षाओं तक सीमित नहीं है। शिक्षा का वास्तविक उद्देश्य
-            ऐसी सोच विकसित करना है जो जिज्ञासा, तार्किक समझ,
-            समस्या-समाधान क्षमता और भविष्य के लिए बेहतर दृष्टिकोण
-            को बढ़ावा दे।
-        </p>
-
-        <p>
-            हम ज्ञान को केवल याद करने के बजाय उसे समझने और वास्तविक
-            जीवन से जोड़कर सीखने पर ज़ोर देते हैं। हमारा प्रयास है
-            कि सीखने की प्रक्रिया सरल, स्पष्ट, उपयोगी और छात्रों
-            के लिए रोचक बनी रहे।
-        </p>
-
-    </section>
-
-
-    <!-- WHAT WE PROVIDE -->
-    <section class="card">
-
-        <h2>
-            हम क्या प्रदान करते हैं
-        </h2>
-
-        <div class="features">
-
-            <div class="feature">
-
-                <div class="icon">
-                    📚
-                </div>
-
-                <h3>
-                    Main Class Section
-                </h3>
-
-                <p>
-                    बोर्ड परीक्षा की तैयारी के लिए व्यवस्थित अध्ययन
-                    सामग्री, पिछले वर्षों के प्रश्न पत्र और
-                    परीक्षा-केंद्रित अभ्यास सामग्री।
-                </p>
-
-            </div>
-
-
-            <div class="feature">
-
-                <div class="icon">
-                    🧠
-                </div>
-
-                <h3>
-                    Foundation Section
-                </h3>
-
-                <p>
-                    बेसिक कॉन्सेप्ट्स को मजबूत करने के लिए
-                    कॉन्सेप्ट-बेस्ड प्रश्न, विज़ुअल लर्निंग,
-                    इंटरएक्टिव एनिमेशन और गेम-जैसे लर्निंग अनुभव।
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <p style="margin-top:22px;">
-
-            Foundation Section में हमारा उद्देश्य कठिन या शुरुआती
-            कॉन्सेप्ट्स को आसान और रोचक तरीके से समझाना है, ताकि
-            छात्र केवल उत्तर याद न करें बल्कि उनके पीछे की
-            अवधारणा को भी समझें।
-
-        </p>
-
-    </section>
-
-
-    <!-- BEYOND STUDIES -->
-    <section class="card">
-
-        <h2>
-            पढ़ाई से आगे
-        </h2>
-
-        <p>
-
-            AVM Education का उद्देश्य केवल परीक्षा की तैयारी तक
-            सीमित नहीं है। समय के साथ हम ऐसा उपयोगी और
-            ज्ञानवर्धक कंटेंट भी जोड़ने का प्रयास करेंगे जो
-            छात्रों को दैनिक जीवन को बेहतर ढंग से समझने और
-            व्यावहारिक सोच विकसित करने में मदद करे।
-
-        </p>
-
-
-        <ul>
-
-            <li>
-                रोज़मर्रा में उपयोग होने वाले शब्द, शब्दावली
-                और उपयोगी जानकारी।
-            </li>
-
-            <li>
-                विभिन्न परंपराओं और रीति-रिवाज़ों के पीछे मौजूद
-                वैज्ञानिक कारणों को समझने वाला ज्ञान।
-            </li>
-
-            <li>
-                रोचक तथ्य, तार्किक सोच और विज्ञान को दैनिक
-                जीवन से जोड़ने वाली जानकारी।
-            </li>
-
-        </ul>
-
-    </section>
-
-
-    <!-- OUR PURPOSE -->
-    <section class="card highlight">
-
-        <h2>
-            हमारा उद्देश्य
-        </h2>
-
-        <p>
-
-            AVM Education का उद्देश्य केवल छात्रों को परीक्षा में
-            सफल बनाने तक सीमित नहीं है। हमारा लक्ष्य ऐसी सीखने
-            की संस्कृति विकसित करना है जहाँ छात्र जिज्ञासु बनें,
-            प्रश्न पूछें, कॉन्सेप्ट्स को समझें और अपने ज्ञान को
-            वास्तविक जीवन से जोड़ सकें।
-
-        </p>
-
-        <p>
-
-            हम लगातार शैक्षणिक सामग्री की गुणवत्ता, उपयोगिता और
-            सीखने के अनुभव को बेहतर बनाने पर काम कर रहे हैं,
-            ताकि छात्रों को सरल, व्यवस्थित और अधिक प्रभावी
-            तरीके से सीखने में सहायता मिल सके।
-
-        </p>
-
-    </section>
-
-
-    <!-- CLOSING -->
-    <div class="quote">
-
-        <p>
-            AVM Education – Learn, Understand, Practice and Grow.
-        </p>
-
-    </div>
-
+<section class="card"><h2>हमारे बारे में</h2>
+<p><strong>AVM (Advance Vision Mindset) Education</strong>, जिसे <strong>AVM Exam Partner</strong> के रूप में प्रस्तुत किया गया है, छात्रों को स्मार्ट तरीके से सीखने, अभ्यास करने और अपनी परीक्षा की तैयारी को बेहतर बनाने के उद्देश्य से बनाया गया है।</p>
+<p>हमारा उद्देश्य छात्रों को गुणवत्तापूर्ण और व्यवस्थित शैक्षणिक सामग्री, पिछले वर्षों के प्रश्न पत्र, कॉन्सेप्ट-बेस्ड प्रश्न और इंटरएक्टिव लर्निंग टूल्स उपलब्ध कराना है, ताकि वे विषयों को बेहतर तरीके से समझ सकें और परीक्षा की तैयारी अधिक प्रभावी ढंग से कर सकें।</p>
+<p>AVM में हमारा मानना है कि शिक्षा केवल किताबों और परीक्षाओं तक सीमित नहीं है। शिक्षा का वास्तविक उद्देश्य ऐसी सोच विकसित करना है जो जिज्ञासा, तार्किक समझ, समस्या-समाधान क्षमता और भविष्य के लिए बेहतर दृष्टिकोण को बढ़ावा दे।</p>
+<p>हम ज्ञान को केवल याद करने के बजाय उसे समझने और वास्तविक जीवन से जोड़कर सीखने पर ज़ोर देते हैं। हमारा प्रयास है कि सीखने की प्रक्रिया सरल, स्पष्ट, उपयोगी और छात्रों के लिए रोचक बनी रहे।</p></section>
+<section class="card"><h2>हम क्या प्रदान करते हैं</h2>
+<div class="features"><div class="feature"><div class="icon">📚</div><h3>Main Class Section</h3><p>बोर्ड परीक्षा की तैयारी के लिए व्यवस्थित अध्ययन सामग्री, पिछले वर्षों के प्रश्न पत्र और परीक्षा-केंद्रित अभ्यास सामग्री।</p></div>
+<div class="feature"><div class="icon">🧠</div><h3>Foundation Section</h3><p>बेसिक कॉन्सेप्ट्स को मजबूत करने के लिए कॉन्सेप्ट-बेस्ड प्रश्न, विज़ुअल लर्निंग, इंटरएक्टिव एनिमेशन और गेम-जैसे लर्निंग अनुभव।</p></div></div>
+<p style="margin-top:22px">Foundation Section में हमारा उद्देश्य कठिन या शुरुआती कॉन्सेप्ट्स को आसान और रोचक तरीके से समझाना है, ताकि छात्र केवल उत्तर याद न करें बल्कि उनके पीछे की अवधारणा को भी समझें।</p></section>
+<section class="card"><h2>पढ़ाई से आगे</h2>
+<p>AVM Education का उद्देश्य केवल परीक्षा की तैयारी तक सीमित नहीं है। समय के साथ हम ऐसा उपयोगी और ज्ञानवर्धक कंटेंट भी जोड़ने का प्रयास करेंगे जो छात्रों को दैनिक जीवन को बेहतर ढंग से समझने और व्यावहारिक सोच विकसित करने में मदद करे।</p>
+<ul><li>रोज़मर्रा में उपयोग होने वाले शब्द, शब्दावली और उपयोगी जानकारी।</li><li>विभिन्न परंपराओं और रीति-रिवाज़ों के पीछे मौजूद वैज्ञानिक कारणों को समझने वाला ज्ञान।</li><li>रोचक तथ्य, तार्किक सोच और विज्ञान को दैनिक जीवन से जोड़ने वाली जानकारी।</li></ul></section>
+<section class="card highlight"><h2>हमारा उद्देश्य</h2>
+<p>AVM Education का उद्देश्य केवल छात्रों को परीक्षा में सफल बनाने तक सीमित नहीं है। हमारा लक्ष्य ऐसी सीखने की संस्कृति विकसित करना है जहाँ छात्र जिज्ञासु बनें, प्रश्न पूछें, कॉन्सेप्ट्स को समझें और अपने ज्ञान को वास्तविक जीवन से जोड़ सकें।</p>
+<p>हम लगातार शैक्षणिक सामग्री की गुणवत्ता, उपयोगिता और सीखने के अनुभव को बेहतर बनाने पर काम कर रहे हैं, ताकि छात्रों को सरल, व्यवस्थित और अधिक प्रभावी तरीके से सीखने में सहायता मिल सके।</p></section>
+<div class="quote"><p>AVM Education – Learn, Understand, Practice and Grow.</p><small>Advance Vision Mindset</small></div>
 </main>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-    © 2026 AVM Exam Partner · Advance Vision Mindset
-
-</footer>
-
-
+<footer>© 2026 <strong>AVM Exam Partner</strong> · Advance Vision Mindset</footer>
 </body>
 </html>
